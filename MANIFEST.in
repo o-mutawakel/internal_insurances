@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include internal_insurances *.css
+recursive-include internal_insurances *.csv
+recursive-include internal_insurances *.html
+recursive-include internal_insurances *.ico
+recursive-include internal_insurances *.js
+recursive-include internal_insurances *.json
+recursive-include internal_insurances *.md
+recursive-include internal_insurances *.png
+recursive-include internal_insurances *.py
+recursive-include internal_insurances *.svg
+recursive-include internal_insurances *.txt
+recursive-exclude internal_insurances *.pyc
