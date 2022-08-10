@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-04 21:41:12.742953",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "date_of_birth",
+  "job",
+  "educational_level",
+  "card_no",
+  "principal_name",
+  "column_break_6",
+  "the_original",
+  "nationality",
+  "relationship",
+  "gender",
+  "social_status",
+  "company",
+  "personal_image",
+  "section_break_12",
+  "insurance_number",
+  "effective_date",
+  "insurance_value",
+  "status",
+  "date_of_status"
+ ],
+ "fields": [
+  {
+   "description": "The full name should be written in English",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "job",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job"
+  },
+  {
+   "fieldname": "educational_level",
+   "fieldtype": "Select",
+   "label": "Educational level",
+   "options": "\n\u0627\u0628\u062a\u062f\u0627\u0626\u064a\n\u0627\u0633\u0627\u0633\u064a\n\u062b\u0627\u0646\u0648\u064a\n\u062c\u0627\u0645\u0639\u064a"
+  },
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Int",
+   "label": "Card No"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Relationship",
+   "options": "Employee\nWife\nSon\nDaughter\nMother\nFather"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "social_status",
+   "fieldtype": "Select",
+   "label": "Social Status",
+   "options": "\nMarried\nSingle\nWidowed\ndivorced"
+  },
+  {
+   "fieldname": "personal_image",
+   "fieldtype": "Attach Image",
+   "label": "Personal Image"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "insurance_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Insurance value"
+  },
+  {
+   "default": "0",
+   "fieldname": "status",
+   "fieldtype": "Check",
+   "label": "\u0627\u0646\u0647\u0627\u0621 \u0627\u0644\u0631\u0628\u0637"
+  },
+  {
+   "default": "Today",
+   "depends_on": "eval:doc.status==1",
+   "fieldname": "date_of_status",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0646\u062a\u0647\u0627\u0621 \u0627\u0644\u0631\u0628\u0637"
+  },
+  {
+   "fieldname": "insurance_number",
+   "fieldtype": "Data",
+   "label": "insurance number"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "principal_name",
+   "fieldtype": "Data",
+   "label": "Principal Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "the_original",
+   "fieldtype": "Check",
+   "label": "The Original"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-08 21:03:24.302107",
+ "modified_by": "Administrator",
+ "module": "Internal Insurances",
+ "name": "Employee Financial Insurance",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
